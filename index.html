@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilitator Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
+</head>
+<body>
+   
+    <div class="blank" id="cover"></div>
+    <div class="blank" id="cover2" onclick="navClose()"></div>
+ <div class="main-cont">
+        <!-- <div class="logo">
+            <img src="./logo copy.png" alt="">
+        </div> -->
+        <div class="dashboard-content">
+          <!-- <div class="menu-bar">
+            <i class="fa fa-bars"></i>
+          </div> -->
+            <div class="side-nav nav1" >
+                <div class="teacher-profile">
+                    <div class="img-cont">
+                        <img src="./assets/img/profile.png" alt="">
+                    </div>
+                    <h3>Ms Florence Adeshepo </h3>
+                    <p>Web Deveelopmwnt teacher</p>
+                </div>
+                <div class="side-nav-link">
+                    <div class="nav-link active" onclick="dashboardView()">
+                        <i class="fa fa-home"></i>
+                        <span>Dashboard</span>
+                    </div>
+                    <div class="nav-link course-nav"  onclick="course_view()" id="">
+                        <i class="fa fa-book-open"></i>
+                        <span>Courses Facilitating</span>
+                    </div>
+                    <div class="nav-link student-nav" onclick="studentView()">
+                        <i class="fa fa-graduation-cap" ></i>
+                        <span>Your Students</span>
+                    </div>
+                    <div class="nav-link test-nav" onclick="testView()">
+                        <i class="fa fa-check-double"></i>
+                        <span>Test</span>
+                    </div>
+                    <div class="nav-link " onclick="gradeView()">
+                        <i class="fa fa-home"></i>
+                        <span>Grading</span>
+                    </div>
+
+                    <div class="nav-link" onclick="faqView()" id="report-link">
+                        <i class="fa fa-home"></i>
+                        <span>Questions by student</span>
+                    </div>
+                    <div class="nav-link" onclick="subscriptionView()" id="report-link">
+                        <i class="fa fa-home"></i>
+                        <span>Subscribed</span>
+                    </div>
+                    <div class="nav-link" onclick="reportView()" id="report-link">
+                        <i class="fa fa-home"></i>
+                        <span>Reports</span>
+                    </div>
+                    <a class="nav-link nav-link-a" href="./teacher-sign-in.html">
+                        <i class="fa fa-sign-out"></i>
+                        <span>Log out</span>    
+                    </a>
+                </div>
+            </div>
+            <div class="side-nav nav2" id="side-nav" style="transition: 600ms;">
+                <div class="teacher-profile">
+                    <div class="img-cont">
+                        <img src="./assets/img/profile.png" alt="">
+                    </div>
+                    <h3>Ms Florence Adeshepo </h3>
+                    <p>Web Deveelopmwnt teacher</p>
+                </div>
+                <div class="side-nav-link">
+                    <div class="nav-link active" onclick="dashboardView()">
+                        <i class="fa fa-home"></i>
+                        <span>Dashboard</span>
+                    </div>
+                    <div class="nav-link course-nav"  onclick="course_view()" id="">
+                        <i class="fa fa-book-open"></i>
+                        <span>Courses Facilitating</span>
+                    </div>
+                    <div class="nav-link student-nav" onclick="studentView()">
+                        <i class="fa fa-graduation-cap" ></i>
+                        <span>Your Students</span>
+                    </div>
+                    <div class="nav-link test-nav" onclick="testView()">
+                        <i class="fa fa-check-double"></i>
+                        <span>Test</span>
+                    </div>
+                    <div class="nav-link " onclick="gradeView()">
+                        <i class="fa fa-home"></i>
+                        <span>Grading</span>
+                    </div>
+
+                    <div class="nav-link" onclick="faqView()" id="report-link">
+                        <i class="fa fa-home"></i>
+                        <span>Questions by student</span>
+                    </div>
+                    <div class="nav-link" onclick="subscriptionView()" id="report-link">
+                        <i class="fa fa-home"></i>
+                        <span>Subscribed</span>
+                    </div>
+                    <div class="nav-link" onclick="reportView()" id="report-link">
+                        <i class="fa fa-home"></i>
+                        <span>Reports</span>
+                    </div> 
+                    <a class="nav-link nav-link-a" href="./teacher-sign-in.html">
+                        <i class="fa fa-sign-out"></i>
+                        <span>Log out</span>    
+                    </a>
+        
+                </div>
+            </div>
+            <div class="middle-main">
+            <div class="middle-content">
+                <!-- DASHBOARD-LINK CONTENT -->
+                <div class="middle-content-cont" id="dashboard" >
+                    
+                    <div class="dashboard-head">
+                        <div class="bar"><i class="fa fa-bars menu-bars" onclick="navFunction()"></i></div>
+                        <span>Facilitator's Account</span>
+                        <i class="fa fa-message"></i>
+                    </div>
+                    <a href="./update-form.html">Click Here To Continue Profile Update</a>
+                    <h2>Welcome Instructor Florence</h2>
+                    <h3>Recents Activities</h3>
+                    </div>
+
+                <!-- COURSES-LINK CONTENT -->
+                <div class="middle-content-cont" id="course"> 
+                  <div class="bar">  <i class="fa fa-bars menu-bars" onclick="navFunction()" style="font-size: 20px; color: green; cursor: pointer; margin-bottom: 10px;"></i></div>
+                    <div class="courses">
+                         <div class="course">
+                             <p>Front-end Development</p>
+                             <div class="view">
+                                 <i class="fa fa-eye"></i>
+                                 <span onclick="view()">View Student</span>
+                             </div>
+                         </div>
+                         <div class="course">
+                             <p>Front-end Development</p>
+                             <div class="view">
+                                 <i class="fa fa-eye"></i>
+                                 <span>View Student</span>
+                             </div>
+                         </div>
+                         <div class="course">
+                             <p>Front-end Development</p>
+                             <div class="view">
+                                 <i class="fa fa-eye"></i>
+                                 <span>View Student</span>
+                             </div>
+                         </div>
+                         <div class="course">
+                             <p>Front-end Development</p>
+                             <div class="view">
+                                 <i class="fa fa-eye"></i>
+                                 <span>View Student</span>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="schedule">
+                     <h2>Schedule</h2>
+                     <table>
+                         <thead>
+                             <tr>
+                                 <th>Sun</th>
+                                 <th>Mon</th>
+                                 <th>Tue</th>
+                                 <th>Wed</th>
+                                 <th>Thur</th>
+                                 <th>Fri</th>
+                                 <th>Sat</th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+                                 <td>01</td>
+                                 <td>02</td>
+                                 <td>03</td>
+                                 <td>04</td>
+                                 <td>
+                                     <div class="lectures">
+                                         05
+                                         <p>Front-end lecture</p>
+                                         <i class="fa fa-clock"></i> <span>10:30am - 1:00pm</span>
+                                     </div>
+                                 </td>
+                                 <td>06</td>
+                                 <td>07</td>
+                             </tr>
+                             <tr>
+                                 <td>08</td>
+                                 <td>09</td>
+                                 <td>10</td>
+                                 <td>11</td>
+                                 <td>12</td>
+                                 <td>13</td>
+                                 <td>14</td>
+                             </tr>
+                             <tr>
+                                 <td>15</td>
+                                 <td>16</td>
+                                 <td>17</td>
+                                 <td>
+                                     <div class="lectures">
+                                         18
+                                         <p>Front-end lecture</p>
+                                         <i class="fa fa-clock"></i> <span>10:30am - 1:00pm</span>
+                                     </div>
+                                 </td>
+                                 <td>19</td>
+                                 <td>20</td>
+                                 <td>21</td>
+                             </tr>
+                             <tr>
+                                 <td>22</td>
+                                 <td>23</td>
+                                 <td>24</td>
+                                 <td>25</td>
+                                 <td>26</td>
+                                 <td>27</td>
+                                 <td>28</td>
+                                 </tr>
+                                 </tbody>
+                                 </table>
+                                 </div>
+                 </div>
+                <!-- STUDDENT-LINK CONTENT -->
+                <div class="middle-content-cont table-cont" id="student" >
+                  <div class="bar">  <i class="fa fa-bars menu-bars" onclick="navFunction()" style="font-size: 20px; color: green; cursor: pointer; margin-bottom: 10px;"></i></div>
+                    <center><h3>Your Students</h3></center>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Course</th>
+                                <th>Gender</th>
+                                <th>Stud ID</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ada</td>
+                                <td>AWS cloud computing</td>
+                                <td>Female</td>
+                                <td>STUD-2345234445</td>
+                            </tr>
+                            <tr>
+                                <td>Ada</td>
+                                <td>AWS cloud computing</td>
+                                <td>Female</td>
+                                <td>STUD-2345234445</td>
+                            </tr>
+                            <tr>
+                                <td>Ada</td>
+                                <td>AWS cloud computing</td>
+                                <td>Female</td>
+                                <td>STUD-2345234445</td>
+                            </tr>
+                            <tr>
+                                <td>Ada</td>
+                                <td>AWS cloud computing</td>
+                                <td>Female</td>
+                                <td>STUD-2345234445</td>
+                            </tr>
+                            <tr>
+                                <td>Ada</td>
+                                <td>AWS cloud computing</td>
+                                <td>Female</td>
+                                <td>STUD-2345234445</td>
+                            </tr>
+                            <tr>
+                                <td>Ada</td>
+                                <td>AWS cloud computing</td>
+                                <td>Female</td>
+                                <td>STUD-2345234445</td>
+                            </tr>
+                            <tr>
+                                <td>Ada</td>
+                                <td>AWS cloud computing</td>
+                                <td>Female</td>
+                                <td>STUD-2345234445</td>
+                            </tr>
+                            <tr>
+                                <td>Ada</td>
+                                <td>AWS cloud computing</td>
+                                <td>Female</td>
+                                <td>STUD-2345234445</td>
+                            </tr>
+                            <tr>
+                                <td>Ada</td>
+                                <td>AWS cloud computing</td>
+                                <td>Female</td>
+                                <td>STUD-2345234445</td>
+                            </tr>
+                            <tr>
+                                <td>Ada</td>
+                                <td>AWS cloud computing</td>
+                                <td>Female</td>
+                                <td>STUD-2345234445</td>
+                            </tr>
+                            <tr>
+                                <td>Ada</td>
+                                <td>AWS cloud computing</td>
+                                <td>Female</td>
+                                <td>STUD-2345234445</td>
+                            </tr>
+                            <tr>
+                                <td>Ada</td>
+                                <td>AWS cloud computing</td>
+                                <td>Female</td>
+                                <td>STUD-2345234445</td>
+                            </tr>
+                            <tr>
+                                <td>Ada</td>
+                                <td>AWS cloud computing</td>
+                                <td>Female</td>
+                                <td>STUD-2345234445</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Test-LINK CONTENT -->
+                <div class="middle-content-cont table-cont" id="test">
+                  <div class="bar">  <i class="fa fa-bars menu-bars" onclick="navFunction()" style="font-size: 20px; color: green; cursor: pointer; margin-bottom: 10px;"></i></div>
+                    <center><h3>Weekly Assessment Test</h3></center>
+                    <table >
+                        <thead>
+                            <tr>
+                                <th>Course</th>
+                                <th>Type</th>
+                                <th>Duration</th>
+                                <th>Mark</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>AWS cloud computing</td>
+                                <td>ezam</td>
+                                <td>3hrs</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>AWS cloud computing</td>
+                                <td>Quiz</td>
+                                <td>2hrs</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>AWS cloud computing</td>
+                                <td>Quiz</td>
+                                <td>2hrs</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>AWS cloud computing</td>
+                                <td>Quiz</td>
+                                <td>2hrs</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>AWS cloud computing</td>
+                                <td>Quiz</td>
+                                <td>2hrs</td>
+                                <td>50</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                    <div class="add-button">
+                        <div class="add" onclick="add()">
+                            <i class="fa fa-add"></i>Add Test Schedule
+                        </div>
+                    </div>
+                </div>
+                <!-- Grading-LINK CONTENT -->
+                <div class="middle-content-cont table-cont" id="grade">
+                  <div class="bar">  <i class="fa fa-bars menu-bars" onclick="navFunction()" style="font-size: 20px; color: green; cursor: pointer; margin-bottom: 10px;"></i></div>
+                    <center><h3>Student's Grade</h3></center>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Student's Course</th>
+                                <th>Results</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bayo</td>
+                                <td>Graphic Design</td>
+                                <td>50/100</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>Bayo</td>
+                                <td>Graphic Design</td>
+                                <td>50/100</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>Bayo</td>
+                                <td>Graphic Design</td>
+                                <td>50/100</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>Bayo</td>
+                                <td>Graphic Design</td>
+                                <td>50/100</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>Bayo</td>
+                                <td>Graphic Design</td>
+                                <td>50/100</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>Bayo</td>
+                                <td>Graphic Design</td>
+                                <td>50/100</td>
+                                <td>C</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!------------Subscription-link  -->
+                <div class="middle-content-cont table-cont" id="subscription">
+                  <div class="bar">  <i class="fa fa-bars menu-bars" onclick="navFunction()" style="font-size: 20px; color: green; cursor: pointer; margin-bottom: 10px;"></i></div>
+                    <center><h3>Student has Subscribed</h3></center>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Courses Subscribed For</th>
+                                <th>Subscription plan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gabriel</td>
+                                <td>Graphic Design</td>
+                                <td>Monthly Plan</td>
+                            </tr>
+                            <tr>
+                                <td>Gabriel</td>
+                                <td>Graphic Design</td>
+                                <td>Monthly Plan</td>
+                            </tr>
+                            <tr>
+                                <td>Gabriel</td>
+                                <td>Graphic Design</td>
+                                <td>Monthly Plan</td>
+                            </tr>
+                            <tr>
+                                <td>Gabriel</td>
+                                <td>Graphic Design</td>
+                                <td>Monthly Plan</td>
+                            </tr>
+                            <tr>
+                                <td>Gabriel</td>
+                                <td>Graphic Design</td>
+                                <td>Monthly Plan</td>
+                            </tr>
+                            <tr>
+                                <td>Gabriel</td>
+                                <td>Graphic Design</td>
+                                <td>Monthly Plan</td>
+                            </tr>
+                            <tr>
+                                <td>Gabriel</td>
+                                <td>Graphic Design</td>
+                                <td>Monthly Plan</td>
+                            </tr>
+                            <tr>
+                                <td>Gabriel</td>
+                                <td>Graphic Design</td>
+                                <td>Monthly Plan</td>
+                            </tr>
+                          
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+                <!----------- FAQ  -->
+                <div class="middle-content-cont" id="faq">
+                  <div class="bar">  <i class="fa fa-bars menu-bars" onclick="navFunction()" style="font-size: 20px; color: green; cursor: pointer; margin-bottom: 10px;"></i></div>
+                    <center><h3>Questions by Student</h3></center>
+                    <div class="question-block">
+                        <div class="questionaire-profile">
+                            <img src="./assets/css/profile.png" alt="">
+                            <p>Ayodeji Tunji</p>
+                        </div>
+                        <div class="question">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dignissimos corrupti reiciendis quisquam eaque quos. Repudiandae, placeat voluptatum fuga magnam minus facere et aliquid at molestiae est consequuntur eius mollitia labore non, ipsam quaerat impedit unde nobis? Maiores a sint laborum magnam consequuntur iusto vel numquam sed corporis minima natus alias est odio, excepturi tempore vero modi consequatur optio nesciunt. Ratione nemo eveniet maiores necessitatibus exercitationem hic. Praesentium odit modi iusto repellat excepturi soluta ullam laudantium illo? Tempore voluptate reiciendis dignissimos similique itaque officiis possimus dolore, non delectus quisquam? Doloribus et voluptatem tempore temporibus a tenetur vel eaque, optio repellat.
+                            <p>10:20pm</p>
+                        </div>
+                    </div>
+                    <div class="question-block">
+                        <div class="questionaire-profile">
+                            <img src="./assets/css/profile.png" alt="">
+                            <p>Ayodeji Tunji</p>
+                        </div>
+                        <div class="question">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dignissimos corrupti reiciendis quisquam eaque quos. Repudiandae, placeat voluptatum fuga magnam minus facere et aliquid at molestiae est consequuntur eius mollitia labore non, ipsam quaerat impedit unde nobis? Maiores a sint laborum magnam consequuntur iusto vel numquam sed corporis minima natus alias est odio, excepturi tempore vero modi consequatur optio nesciunt. Ratione nemo eveniet maiores necessitatibus exercitationem hic. Praesentium odit modi iusto repellat excepturi soluta ullam laudantium illo? Tempore voluptate reiciendis dignissimos similique itaque officiis possimus dolore, non delectus quisquam? Doloribus et voluptatem tempore temporibus a tenetur vel eaque, optio repellat.
+                            <p>10:20pm</p>
+                        </div>
+                    </div>
+                    <div class="question-block">
+                        <div class="questionaire-profile">
+                            <img src="./assets/css/profile.png" alt="">
+                            <p>Ayodeji Tunji</p>
+                        </div>
+                        <div class="question">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dignissimos corrupti reiciendis quisquam eaque quos. Repudiandae, placeat voluptatum fuga magnam minus facere et aliquid at molestiae est consequuntur eius mollitia labore non, ipsam quaerat impedit unde nobis? Maiores a sint laborum magnam consequuntur iusto vel numquam sed corporis minima natus alias est odio, excepturi tempore vero modi consequatur optio nesciunt. Ratione nemo eveniet maiores necessitatibus exercitationem hic. Praesentium odit modi iusto repellat excepturi soluta ullam laudantium illo? Tempore voluptate reiciendis dignissimos similique itaque officiis possimus dolore, non delectus quisquam? Doloribus et voluptatem tempore temporibus a tenetur vel eaque, optio repellat.
+                            <p>10:20pm</p>
+                        </div>
+                    </div>
+                    <div class="question-block">
+                        <div class="questionaire-profile">
+                            <img src="./assets/css/profile.png" alt="">
+                            <p>Ayodeji Tunji</p>
+                        </div>
+                        <div class="question">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dignissimos corrupti reiciendis quisquam eaque quos. Repudiandae, placeat voluptatum fuga magnam minus facere et aliquid at molestiae est consequuntur eius mollitia labore non, ipsam quaerat impedit unde nobis? Maiores a sint laborum magnam consequuntur iusto vel numquam sed corporis minima natus alias est odio, excepturi tempore vero modi consequatur optio nesciunt. Ratione nemo eveniet maiores necessitatibus exercitationem hic. Praesentium odit modi iusto repellat excepturi soluta ullam laudantium illo? Tempore voluptate reiciendis dignissimos similique itaque officiis possimus dolore, non delectus quisquam? Doloribus et voluptatem tempore temporibus a tenetur vel eaque, optio repellat.
+                            <p>10:20pm</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-------------- REPORT CONT  ----------------->
+                <div class="middle-content-cont" id="report">
+                  <div class="bar">  <i class="fa fa-bars menu-bars" onclick="navFunction()" style="font-size: 20px; color: green; cursor: pointer; margin-bottom: 10px;"></i></div>
+                    <h2>Your Reports</h2>
+                    <!-- <h4>Weekly Events Report</h4>
+                    <div class="activities">
+                        <div class="activity-card">
+                            <div class="activity-icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="activity-info">
+                                <span>Ui Design conference - Suceesfull</span>
+                            <span>Status: Success</span>
+                            </div>
+                        </div>
+                        <div class="activity-card">
+                            <div class="activity-icon">
+                                <i class="fa fa-x"></i>
+                            </div>
+                            <div class="activity-info">
+                                <span>Ui Design conference - Not Successful</span>
+                            <span>Status: Failed</span>
+                            </div>
+                        </div>
+                        <div class="activity-card">
+                            <div class="activity-icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="activity-info">
+                                <span>Ui Design Coaching - Suceesfull</span>
+                            <span>Status: Success</span>
+                            </div>
+                        </div>
+                    </div> -->
+                    <h4>Weekly Task Progress</h4>
+                    <div class="task-progress">
+                        <div class="progress">
+                            <i class="fa fa-check"></i>
+                            <span>Pending</span>
+                        </div>
+                        <div class="line"></div>
+                        <div class="progress">
+                            <i class="fa fa-check"></i>
+                            <span>Started</span>
+                        </div>
+                        <div class="line"></div>
+                        <div class="progress failed" >
+                            <i class="fa fa-x"></i>
+                            <span>Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="left-section">
+
+               <div class="left-section-cont">
+                <div class="event" id="event">
+                    <h3>Upcoming Ecents</h3>
+                    <p>Weekly events report</p>
+                    <div class="events" >
+                        <div class="event-icon">
+                            <i class="fa fa-bullhorn"></i>
+                        </div>
+                        <div class="event-info">
+                            <span class="h5">UI Design Conference</span>
+                            <span class="h6">7th of June  - Friday</span>
+                            <div class="time"><i class="fa fa-clock"></i><span>1:00pm - 3:00pm</span></div>
+                        </div>
+                    </div>
+                    <div class="events">
+                        <div class="event-icon">
+                            <i class="fa fa-bullhorn"></i>
+                        </div>
+                        <div class="event-info">
+                            <span class="h5">UI Design Conference</span>
+                            <span class="h6">7th of June  - Friday</span>
+                            <div class="time"><i class="fa fa-clock"></i><span>1:00pm - 3:00pm</span></div>
+                        </div>
+                    </div>
+                    <div class="events">
+                        <div class="event-icon">
+                            <i class="fa fa-bullhorn"></i>
+                        </div>
+                        <div class="event-info">
+                            <span class="h5">UI Design Conference</span>
+                            <span class="h6">7th of June  - Friday</span>
+                            <div class="time"><i class="fa fa-clock"></i><span>1:00pm - 3:00pm</span></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="students-view">
+                    <h4>Students</h4>
+                    <div class="student-view">
+                        <div id="student-profile">
+                        <div class="profile" id="Front-end">
+                            <img src="./assets/css/profile.png" alt="">
+                            <div class="profile-info">
+                                <span class="h5">Ayo Bami</span><br>
+                            <span>Web development</span>
+                            </div>
+                        </div>
+                        </div>
+                        <div id="student-profile">
+                            <div class="profile">
+                                <img src="./assets/css/profile.png" alt="">
+                                <div class="profile-info">
+                                    <span class="h5">Ayo Bami</span><br>
+                                <span>Web development</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="student-profile">
+                            <div class="profile">
+                                <img src="./assets/css/profile.png" alt="">
+                                <div class="profile-info">
+                                    <span class="h5">Ayo Bami</span><br>
+                                <span>Web development</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile" id="Front-end">
+                            <img src="./assets/css/profile.png" alt="">
+                            <div class="profile-info">
+                                <span class="h5">Ayo Bami</span><br>
+                            <span>Web development</span>
+                            </div>
+                        </div>
+                        <div id="student-profile">
+                            <div class="profile">
+                                <img src="./assets/css/profile.png" alt="">
+                                <div class="profile-info">
+                                    <span class="h5">Ayo Bami</span><br>
+                                <span>Web development</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+       
+           
+                </div>
+            </div>
+        </div>
+        <div class="left-section-mobile">
+            <div class="event-mobile">
+                <h3>Upcoming Ecents</h3>
+                <p>Weekly events report</p>
+                <div class="events">
+                    <div class="event-icon">
+                        <i class="fa fa-bullhorn"></i>
+                    </div>
+                    <div class="event-info">
+                        <span class="h5">UI Design Conference</span>
+                        <span class="h6">7th of June  - Friday</span>
+                        <div class="time"><i class="fa fa-clock"></i><span>1:00pm - 3:00pm</span></div>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event-icon">
+                        <i class="fa fa-bullhorn"></i>
+                    </div>
+                    <div class="event-info">
+                        <span class="h5">UI Design Conference</span>
+                        <span class="h6">7th of June  - Friday</span>
+                        <div class="time"><i class="fa fa-clock"></i><span>1:00pm - 3:00pm</span></div>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event-icon">
+                        <i class="fa fa-bullhorn"></i>
+                    </div>
+                    <div class="event-info">
+                        <span class="h5">UI Design Conference</span>
+                        <span class="h6">7th of June  - Friday</span>
+                        <div class="time"><i class="fa fa-clock"></i><span>1:00pm - 3:00pm</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="students-view-mobile">
+                <h4>Students</h4>
+                <div class="student-view">
+                    <div id="student-profile">
+                    <div class="profile" id="Front-end">
+                        <img src="./assets/css/profile.png" alt="">
+                        <div class="profile-info">
+                            <span class="h5">Ayo Bami</span><br>
+                        <span>Web development</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div id="student-profile">
+                        <div class="profile">
+                            <img src="./assets/css/profile.png" alt="">
+                            <div class="profile-info">
+                                <span class="h5">Ayo Bami</span><br>
+                            <span>Web development</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="student-profile">
+                        <div class="profile">
+                            <img src="./assets/css/profile.png" alt="">
+                            <div class="profile-info">
+                                <span class="h5">Ayo Bami</span><br>
+                            <span>Web development</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile" id="Front-end">
+                        <img src="./assets/css/profile.png" alt="">
+                        <div class="profile-info">
+                            <span class="h5">Ayo Bami</span><br>
+                        <span>Web development</span>
+                        </div>
+                    </div>
+                    <div id="student-profile">
+                        <div class="profile">
+                            <img src="./assets/css/profile.png" alt="">
+                            <div class="profile-info">
+                                <span class="h5">Ayo Bami</span><br>
+                            <span>Web development</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+           </div>
+    </div>
+        
+         <!--------------------------------POP UP FORM  -------------------------->
+        
+         <div class="pop-up">
+            <div class="pop-up-form-test"  id="pop">
+                <center><h3>Add Test</h3></center>
+                <form action="">
+                    <select name="" id="">
+                        <option value="1">Courses</option>
+                        <option value="1">AWS cloud computing</option>
+                        <option value="1">Machine Learning</option>
+                        <option value="1">Full-stack Web development</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Test Type</option>
+                        <option value="">Quiz</option>
+                        <option value="">Assesment test</option>
+                        <option value="">Exam</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Duration</option>
+                        <option value="">30mins</option>
+                        <option value="">1hr</option>
+                        <option value="">1hr 30mins</option>
+                        <option value="">2hrs</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Total Mark</option>
+                        <option value="">20</option>
+                        <option value="">50</option>
+                        <option value="">100</option>
+                    </select>
+                    <div class="button" onclick="addDismiss()">Add</div>
+                </form>
+             </div>
+         </div>
+ </div>
+
+
+
+
+</body>
+</html>
+
+<script>
+  
+</script>
+<script src="./assets/js/function.JS"></script>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/update-form.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
+</head>
+<body>
+    <div class="blur"></div>
+    <div class="profile-container" id="cont">
+        <div class="profile-sign-up">
+        <div class="form">
+            <div class="progress">
+                <div class="progress1"></div>
+                <div class="progress2" id="progress2"></div>
+                <div class="progress3" id="progress3"></div>
+            </div>
+            <form action="" class="form1" id="form1">
+                <h3>Personal Information</h3>
+                <label for="fname">First Name:</label><br>
+                <input type="text" placeholder="First Name" class="input"><br><br>
+                <label for="mname">Middle Name:</label><br>
+                <input type="" placeholder="Middle Name"  class="input"><br><br>
+                <label for="">Last Name:</label><br>
+                <input type="text" placeholder="last name"  class="input"><br><br>
+                <label for="">Email Adress:</label><br>
+                <input type="text" placeholder="last name"  class="input"><br><br>
+                <label for="">Phone Number:</label><br>
+                <input type="number"  class="input"><br><br>
+            
+                <div class="next" id="next1">Continue <i class="fa fa-angle-right" onclick="next()"></i></div>
+            </form>
+            <form action="" class="form2" id="form2">
+                <h3>Personal Information</h3>
+                <label for="">Date Of Birth</label><br>
+                <input type="date" class="date"><br><br>
+                <label for="">Nationality:</label><br>
+                <select name="" id="" class="input" style="width: 21rem;">
+                    <option value="">Nationality</option>
+                    <option value="">Nigerian</option>
+                    <option value="">American</option>
+                    <option value="">Ghanian</option>
+                    <option value="">Nationality</option>
+                    <option value="">Nationality</option>
+                </select><br><br>
+                <label for="">State Of Oigin:</label><br>
+                <select name="" id="" class="input" style="width: 21rem;">
+                    <option value="">State Of Origin</option>
+                    <option value="">Ogun</option>
+                    <option value="">Osun</option>
+                    <option value="">Lagos</option>
+                    <option value="">Nationality</option>
+                    <option value="">Nationality</option>
+                </select><br><br>
+                <label for="">Local Government Area</label><br>
+                <select name="" id="" class="input" style="width: 21rem;">
+                    <option value="">L.G.A</option>
+                    <option value="">Ado-odo-ota</option>
+                    <option value="">Nationality</option>
+                    <option value="">Nationality</option>
+                    <option value="">Nationality</option>
+                    <option value="">Nationality</option>
+                </select><br><br>
+                <label for="">State Of Residence</label><br>
+                <input type="text" class="input"><br><br>
+                <div class="direction">
+                    <div class="next" id="back"> <i class="fa fa-angle-left" onclick="next()"></i> Back</i></div>
+                    <div class="next" id="next2">Continue <i class="fa fa-angle-right" onclick="next()"></i></div>
+                </div>
+            </form>
+            <form action="" class="form3" id="form3">
+                <h3>Personal Information</h3>
+                <label for="">Home Address</label>
+                <input type="text" class="input"><br><br>
+                <label for="" style="color: green;">Gender</label>: <br>
+                <label for="">Male</label><input type="radio" name="gender">
+                <label for="">Female</label><input type="radio" name="gender"><br><br>
+                <label for="" style="color: green;">Marital Status:</label><br>
+                <label for="">Married</label><input type="radio" name="status">
+                <label for="">Single</label><input type="radio" name="status">
+                <label for="">Divorce</label><input type="radio" name="status"><br><br>
+                    <label for="" style="color: green;">Religion:</label><br>
+                    <label for="">Christian</label><input type="radio" name="religion">
+                    <label for="">Muslim</label><input type="radio" name="religion">
+                    <label for="">Budhist</label><input type="radio" name="religion"><br><br><br><br>
+
+                    <input type="checkbox"> <label for="">I agree to all the terms and conditions</label><br><br>
+                   <div class="direction">
+                        <div class="next" id="back2"> <i class="fa fa-angle-left" onclick="next()"></i> Back</i></div>
+                        <a class="button" id="submit">Submit Details</a>
+                    </div>
+            </form>
+        </div>
+
+        <div class="img">
+            <img src="./assets/img/teach.png" alt="form-image">
+        </div>
+    </div>
+    </div>
+
+    <div class="profile-container" id="cont2">
+        <div class="profile-sign-up">
+        <div class="form">
+            <div class="progress">
+                <div class="progress1"></div>
+            </div>
+
+            <form action="" class="form1" id="form1">
+                <h3>Work Info</h3>
+                <label for="">Course to failitate</label>
+                <select name="" id="" class="input" style="width: 21rem;">
+                    <option value="">AWS</option>
+                    <option value="">Web Development</option>
+                    <option value="">Cyber Security</option>
+                </select><br><br>
+                <label for="">Duration of Working with us</label>
+                <select name="" id="" class="input" style="width: 21rem;">
+                    <option value="">3 months</option>
+                    <option value="">6 months</option>
+                    <option value="">9 months</option>
+                    <option value="">12 months</option>
+                </select><br><br>
+                    <input type="checkbox"> <label for="">I agree to all the terms and conditions</label><br><br>
+                    <a class="button" id="submit" href="./index.html">Submit Details</a>
+            </form>
+        </div>
+
+        <div class="img">
+            <img src="./assets/img/teach.png" alt="">
+        </div>
+    </div>
+    </div>
+</body>
+<script src="./assets/js/function.JS">
+   
+</script>
+</html>
